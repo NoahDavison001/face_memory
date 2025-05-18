@@ -1,0 +1,45 @@
+Core features:
+    1. load and display random face images
+    2. ask user if theyve seen the face before
+    3. track faces the user has already seen
+    4. give immediate feedback
+    5. keep score / stats
+
+
+Functional components:
+    - image loader
+    - seen tracker
+    - UI 
+    - Storage of results during a session
+    - main loop
+
+
+UI (simplistic for now):
++---------------------------+
+|     [ IMAGE DISPLAY ]    |
+|                           |
+|  Have you seen this face? |
+|  [ Yes ]     [ No ]       |
+|  [Feedback: Correct/Wrong]|
+|  Score: X correct / Y seen|
++---------------------------+
+
+Flow:
+    1. load app and start session
+    2. show first image 
+    3. user clicks yes or no
+    4. compare answer to 'seen' list
+    5. give feedback (correct/incorrect)
+    6. if not seen, add to 'seen' list
+    7. repeat
+
+
+functions:
+    main() - controls app Flow
+    load_images() - loads all image paths
+    show_image() - displays image in UI
+    get_user_response() - gets user's yes/no input
+    check_seen() - checks if image is in seen list
+    log_Seen() - adds image to 'seen' list
+    give_feedback() - displays whether correct or incorrect
+    
