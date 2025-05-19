@@ -43,3 +43,22 @@ functions:
     log_Seen() - adds image to 'seen' list
     give_feedback() - displays whether correct or incorrect
     
+- next button and remove feedback
+- random order of photos, not just going down the list
+- fix ui glitchiness and look
+- colourful feedback
+- access larger database
+
+- section database to ensure some repetition
+-   increase repetition rate depending on success rate
+-   remove 'mastered' faces from database after successful spaced recognitions
+-   show eg. '18/96 seen'
+
+
+
+repetition rate of increase:
+- start with 10 images in active pool, not repeated within 3 images.
+- <25, every 4 answers add another face into active pool
+- 25-75, new face every 3 answers
+- 75+, new face every 2 answers
+
